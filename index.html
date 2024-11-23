@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 20px;
+            padding: 20px;
+            height: 150px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        footer a {
+            color: #a3ecff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                font-size: 1rem;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Exercícios</h1>
+    <div class="cards-container">
+        <a href="https://ravellsl.github.io/atividade1/" target="_blank" class="card">Módulo 1</a>
+        <a href="https://ravellsl.github.io/atividade2/" target="_blank" class="card">Módulo 2</a>
+        <a href="https://ravellsl.github.io/atividade3/" target="_blank" class="card">Módulo 3</a>
+        <a href="https://ravellsl.github.io/atividade4/" target="_blank" class="card">Teclas de Atalho</a>
+        <a href="https://ravellsl.github.io/atividade5/" target="_blank" class="card">Digitação</a>
+        <a href="https://ravellsl.github.io/atividade6/" target="_blank" class="card">Projeto Prático</a>
+    </div>
+    <footer>
+        <p>2024 <a href="https://ravellsl.github.io" target="_blank"></a></p>
+    </footer>
+</body>
+</html>
